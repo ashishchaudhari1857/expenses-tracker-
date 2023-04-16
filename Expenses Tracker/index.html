@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Tracker</title>
+    <style>
+        .main{
+            height: 300px;
+            width: 250px;
+            border: 2px solid black;
+            margin:auto;
+        }
+        h3{
+            text-align: center;
+        }
+       div,select, label,input,button{
+            margin-left: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h3>Expenses Tracker</h3>
+        <form  id="my-form">
+            <label for="mail">Enter Email:</label><br>
+            <input type="email" id="mail"/><br>
+            <label for="amount">Expenses amount</label><br>
+            <input type="number"  id="amount"/><br>
+            <label for="purpose">Expenses purpose</label><br>
+            <input type="text"  id="purpose"/><br>
+            <div >Category of Expenses</div><br>
+            <select id="Category">
+                
+                <option value="movie">movie</option>
+                <option value="education">education</option>
+                <option value="other">other</option>
+            </select><br>
+            <br>
+        <button type="submit">Add Expenses</button>
+        </form>
+    </div>
+    <div id="demo"></div>
+
+</body>
+<script src="my.js"></script>
+</html>
